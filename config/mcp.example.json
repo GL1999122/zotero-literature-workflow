@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "zotero": {
+      "command": "npx",
+      "args": ["-y", "zotero-mcp-server"],
+      "env": {
+        "ZOTERO_API_KEY": "",
+        "ZOTERO_USER_ID": ""
+      }
+    }
+  }
+}

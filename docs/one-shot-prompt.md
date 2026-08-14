@@ -8,14 +8,13 @@
 请执行一次完整的文献检索 → 筛选 → 下载 → Zotero 入库 → 分类 → 同步工作流。
 
 【演示主题】窄间隙钨极氩弧焊（Narrow-Gap GTAW）中的熔池行为
-【下载目录】D:\literature\downloads\（不存在则先创建）
 
 请严格按以下顺序执行，每步完成并确认后再进行下一步：
 
 第 0 步 · 环境确认
 确认 Zotero MCP 工具已加载（zotero_search_items、zotero_add_by_doi、
 zotero_attach_file、zotero_create_collection、zotero_batch_update_tags 等），
-并确认 Zotero 正在运行。
+确认 Zotero 正在运行，并确认本机 Chrome 浏览器已连接（TRAE Chrome 扩展）。
 
 第 1 步 · 检索
 检索 2020 年以来关于该主题的文献，综合使用 Web 搜索与数据库查询，
@@ -26,9 +25,10 @@ zotero_attach_file、zotero_create_collection、zotero_batch_update_tags 等）�
 注意：不限于开放获取文献，机构订阅可访问的同样纳入。
 
 第 3 步 · 浏览器下载
-对清单中的每篇文献，用浏览器自动化（agent-browser）打开 PDF 页面，
-保存到下载目录。每下载一篇就展示一次目录新增文件，再继续下一篇。
-某篇下载失败时说明原因并跳过，不中断流程。
+用本机 Chrome 浏览器（通过 TRAE Chrome 扩展 / agent-browser）逐篇打开
+PDF 页面并下载，保存到工作文件夹。每下载一篇就展示一次新增文件，
+再继续下一篇。遇到需要登录或机构认证的页面时，暂停并请用户协助
+完成登录后再继续；某篇下载失败时说明原因并跳过，不中断流程。
 
 第 4 步 · Zotero 入库
 用 Zotero MCP 将下载的 PDF 导入 Zotero：
@@ -54,8 +54,8 @@ zotero_attach_file、zotero_create_collection、zotero_batch_update_tags 等）�
 |------|------|
 | ① 检索 | 检索 2020 年以来关于 narrow-gap GTAW molten pool 的文献，列出标题、作者、年份、来源和 DOI，输出为表格。 |
 | ② 筛选 | 请从上面结果中筛选出与熔池行为直接相关的 10 篇，给出下载清单（含标题、DOI、下载链接）。注意：不限于开放获取，机构订阅可访问的同样纳入。 |
-| ③ 下载 | 请用浏览器逐篇打开下载清单中的 PDF 页面，下载到 D:\literature\downloads\。每下载一篇展示一次目录，再继续下一篇。 |
-| ④ 入库 | 请将 D:\literature\downloads\ 中所有 PDF 导入 Zotero，用 zotero_add_by_doi 创建条目并自动抓取元数据，用 zotero_attach_file 挂载附件。 |
+| ③ 下载 | 请用本机 Chrome 逐篇打开下载清单中的 PDF 页面并下载，保存到工作文件夹。遇到需要登录或机构认证的页面时暂停，请我协助登录后再继续；每下载一篇展示一次新增文件。 |
+| ④ 入库 | 请将刚才下载到工作文件夹的 PDF 导入 Zotero，用 zotero_add_by_doi 创建条目并自动抓取元数据，用 zotero_attach_file 挂载附件。 |
 | ⑤ 分类 | 请在 Zotero 中创建 Collection "GTAW/molten-pool"，将相关条目移入，并添加标签 "ng-gtaw"。 |
 | ⑥ 同步 | 请检查 Zotero 同步状态，确认条目与附件已同步到云端。 |
 
@@ -65,6 +65,6 @@ zotero_attach_file、zotero_create_collection、zotero_batch_update_tags 等）�
 
 ```
 请检索 narrow-gap GTAW 熔池行为相关文献，筛选 3 篇能获取全文的，
-用浏览器下载到 D:\literature\downloads\，再用 Zotero MCP 导入并分类。
-不限于开放获取，机构订阅可访问的同样纳入。
+用本机 Chrome 下载到工作文件夹，再用 Zotero MCP 导入并分类。
+不限于开放获取，机构订阅可访问的同样纳入；遇到需登录的页面暂停请我协助。
 ```

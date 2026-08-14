@@ -18,7 +18,7 @@ description: AI-assisted scientific literature management workflow: retrieval, s
 
 1. **需求定义**：确认研究主题、关键词、时间范围、来源渠道。
 2. **AI 检索**：使用 WebSearch 检索候选文献，输出结构化列表（标题/作者/年份/DOI/链接）。
-3. **筛选**：按相关性、期刊质量、开放获取情况筛选，输出下载清单。
+3. **筛选**：按相关性、期刊质量、可获取性筛选，输出下载清单。
 4. **下载**：使用浏览器自动化下载 PDF 到 `LIT_DOWNLOAD_DIR`，按 SHA-256 去重。
 5. **Zotero 入库**：使用 Zotero MCP（`zotero_add_by_doi` / `zotero_add_by_url` / `zotero_attach_file`）创建条目并挂载附件。
 6. **分类整理**：创建/复用 Collections 与 Tags，组织文献层级。

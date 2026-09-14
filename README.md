@@ -1,8 +1,8 @@
 # Zotero Literature Workflow
 
-AI-assisted scientific literature management workflow: retrieval, screening, download, Zotero organization and sync. Powered by TRAE AI IDE, browser automation, and the Zotero MCP server.
+AI-assisted scientific literature management workflow: retrieval, screening, download, Zotero organization, sync, and gap analysis. Powered by TRAE AI IDE, browser automation, and the Zotero MCP server.
 
-科研文献管理全流程：AI 检索 — 筛选 — 下载 — Zotero 分类整理 — 精读摘要 — 同步备份。
+科研文献管理全流程：AI 检索 — 筛选 — 下载 — Zotero 分类整理 — 精读摘要 — 研究现状与空白分析 — 同步备份。
 
 ## Features / 特性
 
@@ -10,6 +10,7 @@ AI-assisted scientific literature management workflow: retrieval, screening, dow
 - **自动下载 PDF**：通过浏览器自动化从 arXiv、MDPI、出版社等渠道自动抓取全文 PDF，支持重复文件去重与站点反爬绕行。
 - **Zotero 智能整理**：通过 Zotero MCP 自动创建文献条目、分类（Collections）、挂载附件，按研究主题组织个人文献库。
 - **精读与中文摘要**：逐篇提取摘要/引言，生成规范短标题与中文摘要，补录 Zotero 字段。
+- **研究现状与空白分析**：按方向聚类归纳研究现状（引文支撑），自动识别研究空白与潜在选题方向。
 - **批量导入**：支持从本地 PDF 目录批量导入并自动匹配元数据。
 - **跨端同步**：配置 Zotero 云同步，本地数据库、附件与云端保持一致，多设备无缝衔接。
 - **可复现的工作流**：所有步骤以脚本和 MCP 工具封装，流程可复现、可审计。
@@ -52,7 +53,8 @@ zotero-literature-workflow/
 4. 自动下载      —— 浏览器自动化下载全文 PDF，去重归档，反爬绕行
 5. Zotero 入库   —— 创建条目 + Collections 分类 + 附件挂载
 6. 精读摘要      —— 逐篇生成规范短标题 + 中文摘要，补录 Zotero
-7. 同步备份      —— Zotero 云同步，多端一致
+7. 现状与空白    —— 归纳研究现状（引文支撑），识别研究空白与选题方向
+8. 同步备份      —— Zotero 云同步，多端一致
 ```
 
 详细步骤见 [docs/workflow.md](docs/workflow.md)，防错要点见 [docs/lessons-learned.md](docs/lessons-learned.md)。
